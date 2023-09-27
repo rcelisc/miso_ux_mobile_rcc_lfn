@@ -17,16 +17,15 @@
     <style name="SpinnerStyle123" parent="Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/spinner_border</item>
         <item name="android:popupBackground">@android:color/white</item>
-        <item name="android:paddingLeft">8dp</item> <!-- Espaciado izquierdo -->
-        <item name="android:paddingRight">8dp</item> <!-- Espaciado derecho -->
-        <item name="android:paddingTop">8dp</item> <!-- Espaciado superior -->
-        <item name="android:paddingBottom">8dp</item> <!-- Espaciado inferior -->
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
 
     <style name="AppTheme" parent="Theme.AppCompat">
-        <!-- Cambiar el color de fondo de la barra de la aplicación a azul -->
         <item name="android:background">@color/azul_base</item>
     </style>
 </resources>

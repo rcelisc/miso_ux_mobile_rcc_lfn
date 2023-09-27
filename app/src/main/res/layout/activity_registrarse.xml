@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"/>
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
         android:id="@+id/textView"
@@ -40,8 +40,6 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/flow" />
 
     <TextView
@@ -52,9 +50,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText3" />
 
     <TextView
         android:id="@+id/textView5"
@@ -64,9 +60,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.305"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText4" />
 
     <TextView
         android:id="@+id/textView6"
@@ -76,9 +70,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText5" />
 
     <TextView
         android:id="@+id/textView8"
@@ -88,9 +80,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText7" />
 
     <TextView
         android:id="@+id/textView9"
@@ -100,9 +90,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText8" />
 
     <TextView
         android:id="@+id/textView7"
@@ -112,9 +100,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
         app:layout_constraintBottom_toTopOf="@+id/editTextText6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/editTextText6" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -128,7 +114,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintStart_toStartOf="@+id/flow"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.769" />
 
@@ -159,7 +145,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.259" />
 
@@ -175,7 +161,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextText7"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.597" />
 
@@ -192,7 +178,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextText8"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.712" />
 
@@ -208,7 +194,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextText6"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.486" />
 
@@ -217,7 +203,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="editTextText6,editTextText2,editTextText7,editTextText4,editTextText5,editTextText3,editTextText8"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
         tools:layout_editor_absoluteY="97dp" />
 
     <EditText
@@ -250,8 +236,7 @@
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.372" />
 
