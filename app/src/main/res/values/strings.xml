@@ -30,6 +30,7 @@
     <string name="prompt_horaInicio">"Hora inicio"</string>
     <string name="texto_fechaInicio">"08/01/2022"</string>
     <string name="texto_horaInicio">"08:00 a.m."</string>
+    <string name="prompt_horaInicio">"07:00 a.m."</string>
 
     <string-array name="formulas_spinner">
         <item>Seleccione un Item</item>
