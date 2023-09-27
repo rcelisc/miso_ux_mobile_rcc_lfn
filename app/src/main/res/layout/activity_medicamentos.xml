@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondopills"
     tools:context=".Medicamentos">
+
+
+    <TextView
+        android:id="@+id/textViewTituloFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/medicamentos"
+        android:textColor="@color/azul_base"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/azul_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+
+    <TextView
+        android:id="@+id/textViewFormula1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/formula_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineView" />
+
+    <TextView
+        android:id="@+id/textViewMedicamento1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/medicamento3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1" />
+
+    <TextView
+        android:id="@+id/textViewMedicamento2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/medicamento2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMedicamento1" />
+
+    <TextView
+        android:id="@+id/textViewMedicamento3"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/medicamento1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMedicamento2" />
+
+    <Button
+        android:id="@+id/btnCrearMedicamento"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="@drawable/button_background"
+        android:enabled="true"
+        android:text="@string/crearMedicamento"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

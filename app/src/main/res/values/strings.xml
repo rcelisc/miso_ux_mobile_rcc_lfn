@@ -1,11 +1,49 @@
 <resources>
     <string name="app_name">Pills</string>
     <string name="prompt_usuario">Usuario:</string>
+    <string name="prompt_formula">Formula:</string>
+    <string name="prompt_observacion">Observación:</string>
     <string name="prompt_contrasena">Contraseña:</string>
     <string name="action_sign_in">Iniciar Sesión</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Bienvenidos!"</string>
     <string name="register">"Registrarse"</string>
     <string name="principal">"Formulas médicas"</string>
+    <string name="tratamiento1">"Tratamiento para la gastroenteritis"</string>
+    <string name="tratamiento2">"Tratamiento para la migraña"</string>
+    <string name="tratamiento3">"Tratamiento para la gripe"</string>
+    <string name="crearFormula">"Crear fórmula"</string>
+    <string name="crearMedicamento">"Crear Medicina"</string>
+    <string name="medicamentos">"Medicamentos"</string>
+    <string name="detalleMedicamentos">"Detalle Medicamentos"</string>
+    <string name="medicamento1">"Ibuprofeno 500 mg"</string>
+    <string name="medicamento2">"Amoxicilina 500 mg"</string>
+    <string name="medicamento3">"Noraver garganta 120 ml"</string>
+    <string name="observacion">"El tratamiento para la migraña se debe hacer una vez al mes"</string>
+    <string name="tomarCada">"Tomar Cada :"</string>
+    <string name="editar">"Editar"</string>
+    <string name="detalleFormula">"Detalle fórmula"</string>
+    <string name="eliminar">"Eliminar"</string>
+    <string name="crearMedicina">"Crear Medicina"</string>
+    <string name="observacionMedicina">"Tomar 2 dosis"</string>
+    <string name="prompt_fechaInicio">"Fecha inicio"</string>
+    <string name="prompt_horaInicio">"Hora inicio"</string>
+    <string name="texto_fechaInicio">"08/01/2022"</string>
+    <string name="texto_horaInicio">"08:00 a.m."</string>
+
+    <string-array name="formulas_spinner">
+        <item>Seleccione un Item</item>
+        <item>Tratamiento para la gastroenteritis</item>
+        <item>Tratamiento para la migraña</item>
+        <item>Tratamiento para la gripe</item>
+    </string-array>
+
+    <string-array name="cada_spinner">
+        <item>Seleccione un Item</item>
+        <item>8 horas</item>
+        <item>12 horas</item>
+        <item>16 horas</item>
+        <item>24 horas</item>
+    </string-array>
 
 </resources>

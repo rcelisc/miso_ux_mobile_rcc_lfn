@@ -4,6 +4,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondopills"
     tools:context=".CrearMedicina">
+
+    <TextView
+        android:id="@+id/textViewTituloFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/detalleMedicamentos"
+        android:textColor="@color/azul_base"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/azul_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="295dp"
+        android:layout_height="169dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:text="@string/observacion"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        style="@style/SpinnerStyle"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#ADD6FB"
+        android:defaultValue="Seleccione un Item"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/formulas_spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/lineView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text="Nombre Medicina :"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/prompt_formula"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintStart_toStartOf="@+id/spinner1" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tomarCada"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintStart_toStartOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:text="@string/medicamento3"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/prompt_observacion"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        style="@style/SpinnerStyle"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ADD6FB"
+        android:defaultValue="Seleccione un Item"
+        android:entries="@array/cada_spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.961" />
+
+
+    <Button
+        android:id="@+id/btnEliminarMedicamento"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button_background"
+        android:enabled="true"
+        android:text="@string/eliminar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine" />
+
+    <Button
+        android:id="@+id/btnEditarMedicamento"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_background"
+        android:enabled="true"
+        android:text="@string/editar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarMedicamento"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

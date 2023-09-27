@@ -4,16 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/fondopills"
     tools:context=".Principal">
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_star"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="56dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -28,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <View
         android:id="@+id/lineView"
         android:layout_width="match_parent"
@@ -38,24 +31,83 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"></View>
+        app:layout_constraintVertical_bias="0.069" />
 
     <Button
         android:id="@+id/btnAgregarFormula"
         android:layout_width="191dp"
         android:layout_height="50dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="58dp"
         android:background="@null"
-        android:text="Agregar  + "
+        android:text="Agregar  "
+        android:elevation="4dp"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textColor="@color/azul_base"
         android:textSize="30sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewFormula1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFormula3"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewFormula2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_edittext"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFormula1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="@+id/btnAgregarFormula"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/plus50x50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
