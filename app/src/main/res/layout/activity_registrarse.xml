@@ -7,11 +7,31 @@
     android:background="@drawable/fondopills"
     tools:context=".Registrarse">
 
+
+    <TextView
+        android:id="@+id/textViewFormula1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/navbar_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_width="274dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:text="@string/register"
         android:textColor="@color/azul_base"
         android:textSize="38sp"
@@ -30,181 +50,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:text="Nombres :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/flow" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:text="Apellidos :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="172dp"
-        android:layout_height="17dp"
-        android:text="Fecha Nacimiento :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText4"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="85dp"
-        android:layout_height="17dp"
-        android:text="Correo :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText5"
-        app:layout_constraintStart_toStartOf="@+id/editTextText5" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="85dp"
-        android:layout_height="17dp"
-        android:text="Contraseña :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText7"
-        app:layout_constraintStart_toStartOf="@+id/editTextText7" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="147dp"
-        android:layout_height="17dp"
-        android:text="Confirmar Contraseña :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText8"
-        app:layout_constraintStart_toStartOf="@+id/editTextText8" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="85dp"
-        android:layout_height="17dp"
-        android:text="Celular :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText6"
-        app:layout_constraintStart_toStartOf="@+id/editTextText6" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="264dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingStart="18dp"
-        android:text="Rodolfo"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769" />
-
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Apellidos :"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/flow"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="264dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingStart="18dp"
-        android:text="Celis Campos"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="264dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingStart="18dp"
-        android:text="3003152451"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
-
-
-    <EditText
-        android:id="@+id/editTextText7"
-        android:layout_width="264dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:paddingStart="18dp"
-        android:text="qweertttyy"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="264dp"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingStart="18dp"
-        android:text="r.celis@uniandes.edu.co"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486" />
-
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="editTextText6,editTextText2,editTextText7,editTextText4,editTextText5,editTextText3,editTextText8"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <EditText
         android:id="@+id/editTextText8"
@@ -212,6 +58,7 @@
         android:layout_height="50dp"
         android:background="@drawable/edittext_border"
         android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:inputType="textPassword"
         android:paddingStart="18dp"
         android:text="qweertttyy"
@@ -222,7 +69,152 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:text="r.celis@uniandes.edu.co"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="85dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/prompt_contrasena"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText7"
+        app:layout_constraintStart_toStartOf="@+id/editTextText7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="85dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/promt_correo"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText5"
+        app:layout_constraintStart_toStartOf="@+id/editTextText5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="147dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/prompt_repetircontrasena"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText8"
+        app:layout_constraintStart_toStartOf="@+id/editTextText8" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:text="Celis Campos"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="111dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/promt_nombres"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:text="Rodolfo"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.823" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="111dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/promt_apellidos"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:text="qweertttyy"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:text="3003152451"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -230,6 +222,7 @@
         android:layout_height="50dp"
         android:background="@drawable/edittext_border"
         android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:inputType="text"
         android:paddingStart="18dp"
         android:text="01/10/2020"
@@ -238,7 +231,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="172dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/promt_fechanacimiento"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText4"
+        app:layout_constraintStart_toStartOf="@+id/editTextText4" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="85dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/promt_celularr"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText6"
+        app:layout_constraintStart_toStartOf="@+id/editTextText6" />
 
     <Button
         android:id="@+id/btnGrabarRegistro"
@@ -247,6 +265,7 @@
         android:layout_gravity="start"
         android:background="@drawable/button_selector"
         android:enabled="true"
+        android:fontFamily="@font/zenmarugothic_bold"
         android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -268,7 +287,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="97dp" />
+        app:layout_constraintGuide_begin="116dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -296,6 +315,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="guideline5" />
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toTopOf="@+id/textViewFormula1"
+        app:srcCompat="@drawable/atras_26"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

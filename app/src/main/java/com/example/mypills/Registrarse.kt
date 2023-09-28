@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class Registrarse : AppCompatActivity() {
@@ -20,17 +21,12 @@ class Registrarse : AppCompatActivity() {
             startActivity(regis)
         }
 
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            android.R.id.home -> {
-//                // Realiza las acciones necesarias para volver a la pantalla anterior
-//                onBackPressed() // O puedes usar una intención de navegación, si estás utilizando Navigation Component.
-//                return true
-//            }
-//            else -> return super.onOptionsItemSelected(item)
-//        }
-//    }
+        val btnVolver = findViewById<ImageView>(R.id.imageViewBack)
 
+        btnVolver.setOnClickListener{
+            val regis = Intent(this, Login::class.java)
+            startActivity(regis)
+        }
 
 
     }

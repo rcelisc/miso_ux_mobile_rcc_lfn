@@ -9,18 +9,49 @@
 
 
     <TextView
-        android:id="@+id/textViewTituloFormula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="@string/medicamentos"
-        android:textColor="@color/azul_base"
-        android:textSize="38sp"
+        android:id="@+id/textViewFormulaPpal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/navbar_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageViewCerrarMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/textViewFormulaPpal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/textViewFormula1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/formula_edittext"
+        android:fontFamily="@font/zenmarugothic_bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lineView" />
 
     <View
         android:id="@+id/lineView"
@@ -32,51 +63,52 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
-
-
-    <TextView
-        android:id="@+id/textViewFormula1"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="1dp"
-        android:background="@drawable/formula_edittext"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="10dp"
-        android:text="@string/tratamiento1"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lineView" />
+        app:layout_constraintVertical_bias="0.153" />
 
     <TextView
-        android:id="@+id/textViewMedicamento1"
+        android:id="@+id/textViewMedicamento3"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:gravity="left|center_vertical"
         android:paddingLeft="10dp"
-        android:text="@string/medicamento3"
+        android:text="@string/medicamento1"
         android:textColor="@color/black"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMedicamento2" />
+
+    <TextView
+        android:id="@+id/textViewTituloFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:text="@string/medicamentos"
+        android:textColor="@color/azul_base"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewMedicamento2"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:gravity="left|center_vertical"
         android:paddingLeft="10dp"
         android:text="@string/medicamento2"
         android:textColor="@color/black"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -84,20 +116,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewMedicamento1" />
 
     <TextView
-        android:id="@+id/textViewMedicamento3"
+        android:id="@+id/textViewMedicamento1"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:gravity="left|center_vertical"
         android:paddingLeft="10dp"
-        android:text="@string/medicamento1"
+        android:text="@string/medicamento3"
         android:textColor="@color/black"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMedicamento2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1" />
 
     <Button
         android:id="@+id/btnCrearMedicamento"
@@ -110,6 +144,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:fontFamily="@font/zenmarugothic_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

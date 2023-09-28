@@ -4,6 +4,7 @@
     <string name="prompt_formula">Formula:</string>
     <string name="prompt_observacion">Observación:</string>
     <string name="prompt_contrasena">Contraseña:</string>
+    <string name="prompt_repetircontrasena">Confirmar contraseña:</string>
     <string name="action_sign_in">Iniciar Sesión</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Bienvenidos!"</string>
@@ -32,7 +33,13 @@
     <string name="texto_horaInicio">"08:00 a.m."</string>
     <string name="prompt_horaInicio2">"07:00 a.m."</string>
     <string name="tomarMedicina">"Tomar Medicina"</string>
+    <string name="agregar">"Agregar "</string>
     <string name="observacionMedicinaComp">"Tomar 2 dosis cada 8 horas"</string>
+    <string name="promt_nombres">"Nombres: "</string>
+    <string name="promt_apellidos">"Apellidos: "</string>
+    <string name="promt_fechanacimiento">"Fecha Nacimiento: "</string>
+    <string name="promt_correo">"Correo: "</string>
+    <string name="promt_celularr">"Celular: "</string>
 
     <string-array name="formulas_spinner">
         <item>Seleccione un Item</item>

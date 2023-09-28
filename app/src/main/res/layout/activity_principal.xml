@@ -8,10 +8,28 @@
     tools:context=".Principal">
 
     <TextView
+        android:id="@+id/textViewFormulaPpal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/navbar_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:text="@string/principal"
         android:textColor="@color/azul_base"
         android:textSize="38sp"
@@ -20,6 +38,90 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewFormula1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFormula2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textViewFormula3"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tratamiento3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormula2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnAgregarFormula"
+        android:layout_width="194dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="124dp"
+        android:background="@null"
+        android:elevation="4dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:paddingLeft="10dp"
+        android:text="@string/agregar"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/azul_base"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFormula1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="@+id/btnAgregarFormula"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/plus50x50" />
 
     <View
         android:id="@+id/lineView"
@@ -31,83 +133,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.157" />
 
-    <Button
-        android:id="@+id/btnAgregarFormula"
-        android:layout_width="191dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="58dp"
-        android:background="@null"
-        android:text="Agregar  "
-        android:elevation="4dp"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="@color/azul_base"
-        android:textSize="30sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewFormula1"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/button_edittext"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="10dp"
-        android:text="@string/tratamiento1"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewFormula3"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/button_edittext"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="10dp"
-        android:text="@string/tratamiento3"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFormula2"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textViewFormula2"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/button_edittext"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="10dp"
-        android:text="@string/tratamiento2"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFormula1"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/imageViewCerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
-        android:layout_marginBottom="10dp"
-        android:background="@null"
-        app:layout_constraintBottom_toTopOf="@+id/textViewFormula1"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
-        app:layout_constraintStart_toStartOf="@+id/btnAgregarFormula"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/textViewFormulaPpal"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/plus50x50" />
+        app:srcCompat="@drawable/person" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

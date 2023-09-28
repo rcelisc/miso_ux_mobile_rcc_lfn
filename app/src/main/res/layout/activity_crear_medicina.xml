@@ -8,10 +8,48 @@
     tools:context=".CrearMedicina">
 
     <TextView
+        android:id="@+id/textViewFormulaPpal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/navbar_edittext"
+        android:fontFamily="@font/zenmarugothic_medium"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCerrarDetalleMedicamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/textViewFormulaPpal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/imageViewBackDetalleMedicamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toTopOf="@+id/textViewFormulaPpal"
+        app:srcCompat="@drawable/atras_26"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
         android:id="@+id/textViewTituloFormula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/zenmarugothic_medium"
         android:text="@string/detalleMedicamentos"
         android:textColor="@color/azul_base"
         android:textSize="36sp"
@@ -31,57 +69,60 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
-
+        app:layout_constraintVertical_bias="0.153" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="295dp"
         android:layout_height="169dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/edittext_border"
         android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:paddingStart="10dp"
         android:text="@string/observacion"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        style="@style/SpinnerStyle"
+    <EditText
+        android:id="@+id/editTextText"
         android:layout_width="295dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="76dp"
-        android:backgroundTint="#ADD6FB"
-        android:defaultValue="Seleccione un Item"
-        android:dropDownWidth="match_parent"
-        android:entries="@array/formulas_spinner"
-        android:spinnerMode="dropdown"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/lineView" />
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:text="@string/medicamento3"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="184dp"
+        android:id="@+id/textView12"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
-        android:text="Nombre Medicina :"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="@string/tomarCada"
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/spinner1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintStart_toStartOf="@+id/spinner2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="111dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:text="@string/prompt_formula"
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
@@ -89,40 +130,11 @@
         app:layout_constraintStart_toStartOf="@+id/spinner1" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/tomarCada"
-        android:textAlignment="textStart"
-        android:textColor="@color/azul_base"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
-        app:layout_constraintStart_toStartOf="@+id/spinner2"
-        app:layout_constraintTop_toTopOf="@+id/editTextText"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="295dp"
-        android:layout_height="54dp"
-        android:background="@drawable/edittext_border"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingStart="10dp"
-        android:text="@string/medicamento3"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
-
-    <TextView
         android:id="@+id/textView15"
         android:layout_width="111dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:text="@string/prompt_observacion"
         android:textAlignment="textStart"
         android:textColor="@color/azul_base"
@@ -133,16 +145,45 @@
         android:id="@+id/spinner2"
         style="@style/SpinnerStyle"
         android:layout_width="295dp"
-        android:layout_height="50dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#ADD6FB"
         android:defaultValue="Seleccione un Item"
         android:entries="@array/cada_spinner"
+        android:fontFamily="@font/zenmarugothic_regular"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:text="Nombre Medicina :"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul_base"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="@+id/editTextText" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        style="@style/SpinnerStyle"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#ADD6FB"
+        android:defaultValue="Seleccione un Item"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/formulas_spinner"
+        android:fontFamily="@font/zenmarugothic_regular"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTituloFormula" />
 
     <Button
         android:id="@+id/btnEliminarMedicamento"
@@ -153,6 +194,7 @@
         android:layout_marginEnd="72dp"
         android:background="@drawable/button_background"
         android:enabled="true"
+        android:fontFamily="@font/zenmarugothic_bold"
         android:text="@string/eliminar"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -169,6 +211,7 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/button_background"
         android:enabled="true"
+        android:fontFamily="@font/zenmarugothic_bold"
         android:text="@string/editar"
         android:textAllCaps="false"
         android:textColor="@color/white"

@@ -3,6 +3,7 @@ package com.example.mypills
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -15,6 +16,13 @@ class Principal : AppCompatActivity() {
         val textFormula1 = findViewById<TextView>(R.id.textViewFormula1)
         val textFormula2 = findViewById<TextView>(R.id.textViewFormula2)
         val textFormula3 = findViewById<TextView>(R.id.textViewFormula3)
+        val btnVolver = findViewById<ImageView>(R.id.imageViewCerrar)
+
+
+        btnVolver.setOnClickListener{
+            val salir = Intent(this, Login::class.java)
+            startActivity(salir)
+        }
 
         btnAgregarFormula.setOnClickListener{
             val crearFormula = Intent(this, CrearFormula::class.java)
